@@ -1,0 +1,20 @@
+<app-movies-search (moviesSearch)="searchMovies($event)"></app-movies-search>
+<div class="row m-2">
+    <div class="col" *ngFor="let Tvshows of results">
+        <div class="m-2 text-center">
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.tmdb.org/t/p/original{{Tvshows.poster_path}}" class="card-img-top" alt="NO Image To View">
+                <div class="card-body">
+                  <h5 class="card-title">{{Tvshows.title}}</h5>
+                  <p class="card-text">{{Tvshows.overview}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Popularity: {{Tvshows.popularity}}</li>
+                  <li class="list-group-item">No. of Votes: {{Tvshows.vote_count}}</li>
+                  <li class="list-group-item">Average No. of Votes: {{Tvshows.vote_average}}</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    </div>
+    

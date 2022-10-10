@@ -1,0 +1,20 @@
+<div class="row m-2">
+    <div class="col" *ngFor="let Trendingmovie of results">
+        <div class="m-2 text-center">
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.tmdb.org/t/p/original{{Trendingmovie.poster_path}}" class="card-img-top" alt="NO Image To View">
+                <div class="card-body">
+                  <h5 class="card-title">{{Trendingmovie.title}}</h5>
+                  <p class="card-text">{{Trendingmovie.overview}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Release Date : {{Trendingmovie.release_date}}</li>
+                  <li class="list-group-item">Popularity: {{Trendingmovie.popularity}}</li>
+                  <li class="list-group-item">No. of Votes: {{Trendingmovie.vote_count}}</li>
+                  <li class="list-group-item">Average No. of Votes: {{Trendingmovie.vote_average}}</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    </div>
+    
